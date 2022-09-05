@@ -4,6 +4,27 @@ console.log(cards);
 function App() {
   return (
     <div className="App">
+      <div className="fraction-selection">
+        <div className="prev-fraction">
+          <div className="prev-fraction-name">Чудовища</div>
+          <div className="arrow-prev-fraction">
+            <img src={"./img/arrow-prev.png"} alt={""} />
+          </div>
+        </div>
+
+        <div className="current-fraction">
+          <div className="current-fraction-icon">
+            <img src={"./img/Nilf.png"} alt={""} />
+          </div>
+          <div className="current-fraction-name">Нильфгаард</div>
+        </div>
+        <div className="next-fraction">
+          <div className="arrow-next-fraction">
+            <img src={"./img/arrow-next.png"} alt={""} />
+          </div>
+          <div className="next-fraction-name">Королевства севера</div>
+        </div>
+      </div>
       <div className="cards-container">
         <div className="left-block">
           <div className="deck">Карты колод</div>
