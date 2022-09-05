@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 100%;
+    min-height: 100vh;
+    color: wheat;
+    background: black;
+  }
+
+  [class^="box-"] {
+    background-color: skyblue;
+    /* Размещаем контейнеры по центру */
+    display: grid;
+    place-items: center;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fraction-selection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1300px;
+    min-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .left-block, .right-block {
+    /*display: grid;*/
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+  }
+
+  .left-block, .right-block {
+    /*grid-template-rows: 30px 19px 36px 73px auto;*/
+  }
+
+  .center-block {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+  .next-fraction, .prev-fraction {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .next-fraction {
+    justify-content: flex-start;
+  }
+
+  .prev-fraction {
+    justify-content: flex-end;
+  }
+
+  .deck, .cards-type, .collection {
+    width: 100%;
+  }
+
+  .collection, .right-block .cards-type {
+    text-align: end;
+  }
+
+  .list-card-types {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .current-fraction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .current-fraction-icon img {
+    width: 50px;
+  }
+
+
+
+  .all-cards, .units-cards, .special-cards, .power-cards, .heroes-cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cards-information {
+    text-align: center;
+  }
+
+  .leader-card img {
+    width: 150px;
+  }
+
+  .leader-card-info {
+    background-color: bisque;
+    color: black;
+    padding: 5px;
+    margin-top: -5px;
+  }
+
+  .deck-cards {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+  /*CARD*/
+  .card-info {
+    position: relative;
+  }
+
+  .card-info img {
+    width: 100%;
+  }
+
+  .card-type img {
+    width: 55px;
+  }
+
+  .card-power {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+  }
+
+  .card-classification {
+    position: absolute;
+    top: 12%;
+    left: 3%;
+  }
+
+  .card-ability {
+    position: absolute;
+    top: 24%;
+    left: 3%;
+  }
+
+  .card-description {
+    padding: 10% 0;
+    background: bisque;
+    color: black;
+    text-align: center;
+    margin-top: -4px;
+  }
+
+  .card {
+    width: 98%;
+  }
+
