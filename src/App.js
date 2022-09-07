@@ -1,7 +1,11 @@
-import "./scss/App.scss";
+import styles from "./scss/App.scss";
 import cards from "./cards.json";
-console.log(cards);
+import  "./App.css";
+import st from "./test.module.css";
+
+console.log(styles);
 function App() {
+  console.log(st.testing);
   return (
     <div className="App">
       <div className="fraction-selection">
@@ -14,7 +18,7 @@ function App() {
 
         <div className="current-fraction">
           <div className="current-fraction-icon">
-            <img src={"./img/Nilf.png"} alt={""} />
+            <img className="current-fraction-image" src={"./img/Nilf.png"} alt={""} />
           </div>
           <div className="current-fraction-name">Нильфгаард</div>
         </div>
@@ -31,31 +35,32 @@ function App() {
           <div className="cards-type">ГЕРОИ</div>
           <div className="list-card-types">
             <div className="card-type all">
-              <img src={"./img/All.png"} alt={""} />
+              <img className="card-type-image" src={"./img/All.png"} alt={""} />
             </div>
             <div className="card-type meelee">
-              <img src={"./img/Meelee.png"} alt={""} />
+              <img className="card-type-image" src={"./img/Meelee.png"} alt={""} />
             </div>
             <div className="card-type archer">
-              <img src={"./img/Archers.png"} alt={""} />
+              <img className="card-type-image" src={"./img/Archers.png"} alt={""} />
             </div>
             <div className="card-type cata">
-              <img src={"./img/Cata.png"} alt={""} />
+              <img className="card-type-image" src={"./img/Cata.png"} alt={""} />
             </div>
             <div className="card-type heroes">
-              <img src={"./img/Heroes.png"} alt={""} />
+              <img className="card-type-image" src={"./img/Heroes.png"} alt={""} />
             </div>
             <div className="card-type whether">
-              <img src={"./img/Whether.png"} alt={""} />
+              <img className="card-type-image" src={"./img/Whether.png"} alt={""} />
             </div>
             <div className="card-type special">
-              <img src={"./img/Special.png"} alt={""} />
+              <img className="card-type-image" src={"./img/Special.png"} alt={""} />
             </div>
           </div>
           <div className="deck-cards">
             <div className="card">
               <div className="card-info">
                 <img
+                  className="card-info-image"
                   src={"./img/cards/Tw3_cardart_monsters_fiend.webp"}
                   alt={""}
                 />
@@ -72,6 +77,7 @@ function App() {
             <div className="card">
               <div className="card-info">
                 <img
+                  className="card-info-image"
                   src={"./img/cards/Tw3_cardart_monsters_fiend.webp"}
                   alt={""}
                 />
@@ -88,6 +94,7 @@ function App() {
             <div className="card">
               <div className="card-info">
                 <img
+                  className="card-info-image"
                   src={"./img/cards/Tw3_cardart_monsters_fiend.webp"}
                   alt={""}
                 />
@@ -104,6 +111,7 @@ function App() {
             <div className="card">
               <div className="card-info">
                 <img
+                  className="card-info-image"
                   src={"./img/cards/Tw3_cardart_monsters_fiend.webp"}
                   alt={""}
                 />
@@ -120,6 +128,7 @@ function App() {
             <div className="card">
               <div className="card-info">
                 <img
+                  className="card-info-image"
                   src={"./img/cards/Tw3_cardart_monsters_fiend.webp"}
                   alt={""}
                 />
@@ -136,6 +145,7 @@ function App() {
             <div className="card">
               <div className="card-info">
                 <img
+                  className="card-info-image"
                   src={"./img/cards/Tw3_cardart_monsters_fiend.webp"}
                   alt={""}
                 />
@@ -152,6 +162,7 @@ function App() {
             <div className="card">
               <div className="card-info">
                 <img
+                  className="card-info-image"
                   src={"./img/cards/Tw3_cardart_monsters_fiend.webp"}
                   alt={""}
                 />
@@ -168,6 +179,7 @@ function App() {
             <div className="card">
               <div className="card-info">
                 <img
+                  className="card-info-image"
                   src={"./img/cards/Tw3_cardart_monsters_fiend.webp"}
                   alt={""}
                 />
@@ -184,6 +196,7 @@ function App() {
             <div className="card">
               <div className="card-info">
                 <img
+                  className="card-info-image"
                   src={"./img/cards/Tw3_cardart_monsters_fiend.webp"}
                   alt={""}
                 />
@@ -200,6 +213,7 @@ function App() {
             <div className="card">
               <div className="card-info">
                 <img
+                  className="card-info-image"
                   src={"./img/cards/Tw3_cardart_monsters_fiend.webp"}
                   alt={""}
                 />
@@ -223,6 +237,7 @@ function App() {
           <div className="leader-card-container">
             <div className="leader-card">
               <img
+                className="leader-card-image"
                 src={
                   "./img/cards/Tw3_cardart_nilfgaard_leader_emhyr_silver.webp"
                 }
@@ -287,25 +302,25 @@ function App() {
           <div className="cards-type">ГЕРОИ</div>
           <div className="list-card-types">
             <div className="card-type all">
-              <img src={"./img/All.png"} alt={""} />
+              <img className="card-type-image" src={"./img/All.png"} alt={""} />
             </div>
             <div className="card-type meelee">
-              <img src={"./img/Meelee.png"} alt={""} />
+              <img className="card-type-image" src={"./img/Meelee.png"} alt={""} />
             </div>
             <div className="card-type archer">
-              <img src={"./img/Archers.png"} alt={""} />
+              <img className="card-type-image" src={"./img/Archers.png"} alt={""} />
             </div>
             <div className="card-type cata">
-              <img src={"./img/Cata.png"} alt={""} />
+              <img className="card-type-image" src={"./img/Cata.png"} alt={""} />
             </div>
             <div className="card-type heroes">
-              <img src={"./img/Heroes.png"} alt={""} />
+              <img className="card-type-image" src={"./img/Heroes.png"} alt={""} />
             </div>
             <div className="card-type whether">
-              <img src={"./img/Whether.png"} alt={""} />
+              <img className="card-type-image" src={"./img/Whether.png"} alt={""} />
             </div>
             <div className="card-type special">
-              <img src={"./img/Special.png"} alt={""} />
+              <img className="card-type-image" src={"./img/Special.png"} alt={""} />
             </div>
           </div>
           <div className="collection-cards"></div>
