@@ -1,12 +1,9 @@
-import styles from "./scss/App.scss";
 import cards from "./cards.json";
 import "./App.css";
-//import st from "./test.module2.css";
 import style from "./scss/cards.module.scss";
 
-console.log(style);
+
 function App() {
-  //console.log(st.testing);
   return (
     <div className="App">
       <div className={style["fraction-selection"]}>
@@ -16,7 +13,6 @@ function App() {
             <img src={"./img/arrow-prev.png"} alt={""} />
           </div>
         </div>
-
         <div className={style["current-fraction"]}>
           <div className={style["current-fraction-icon"]}>
             <img
