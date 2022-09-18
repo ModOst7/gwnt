@@ -2,34 +2,51 @@ import cards from "./cards.json";
 import "./App.css";
 import style from "./scss/cards.module.scss";
 
+function FractionSelector() {
+  return (
+    <div className={style["fraction-selection"]}>
+      <div className={style["prev-fraction"]}>
+        <div className={style["prev-fraction-name"]}>Чудовища</div>
+        <div className={style["arrow-prev-fraction"]}>
+          <img src={"./img/arrow-prev.png"} alt={""} />
+        </div>
+      </div>
+      <div className={style["current-fraction"]}>
+        <div className={style["current-fraction-icon"]}>
+          <img
+            className={style["current-fraction-image"]}
+            src={"./img/Nilf.png"}
+            alt={""}
+          />
+        </div>
+        <div className={style["current-fraction-name"]}>Нильфгаард</div>
+      </div>
+      <div className={style["next-fraction"]}>
+        <div className={style["arrow-next-fraction"]}>
+          <img src={"./img/arrow-next.png"} alt={""} />
+        </div>
+        <div className={style["next-fraction-name"]}>Королевства севера</div>
+      </div>
+    </div>
+  );
+}
+
+function CardsCollection() {
+  return <h1></h1>;
+}
+
+function CardsDeck() {
+  return <h1></h1>;
+}
+
+function CardsStatistic() {
+  return <h1></h1>;
+}
 
 function App() {
   return (
     <div className="App">
-      <div className={style["fraction-selection"]}>
-        <div className={style["prev-fraction"]}>
-          <div className={style["prev-fraction-name"]}>Чудовища</div>
-          <div className={style["arrow-prev-fraction"]}>
-            <img src={"./img/arrow-prev.png"} alt={""} />
-          </div>
-        </div>
-        <div className={style["current-fraction"]}>
-          <div className={style["current-fraction-icon"]}>
-            <img
-              className={style["current-fraction-image"]}
-              src={"./img/Nilf.png"}
-              alt={""}
-            />
-          </div>
-          <div className={style["current-fraction-name"]}>Нильфгаард</div>
-        </div>
-        <div className={style["next-fraction"]}>
-          <div className={style["arrow-next-fraction"]}>
-            <img src={"./img/arrow-next.png"} alt={""} />
-          </div>
-          <div className={style["next-fraction-name"]}>Королевства севера</div>
-        </div>
-      </div>
+      <FractionSelector />
       <div className={style["cards-container"]}>
         <div className={style["left-block"]}>
           <div className={style["deck"]}>Карты колод</div>
