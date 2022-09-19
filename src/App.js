@@ -31,15 +31,197 @@ function FractionSelector() {
   );
 }
 
-function CardsCollection() {
-  return <h1></h1>;
+function DeckCategories() {
+  return (<div>
+    <div className={style["cards-type"]}>ГЕРОИ</div>
+    <div className={style["list-card-types"]}>
+      <div className={style["card-type all"]}>
+        <img
+          className={style["card-type-image"]}
+          src={"./img/All.png"}
+          alt={""}
+        />
+      </div>
+      <div className={style["card-type meelee"]}>
+        <img
+          className={style["card-type-image"]}
+          src={"./img/Meelee.png"}
+          alt={""}
+        />
+      </div>
+      <div className={style["card-type archer"]}>
+        <img
+          className={style["card-type-image"]}
+          src={"./img/Archers.png"}
+          alt={""}
+        />
+      </div>
+      <div className={style["card-type cata"]}>
+        <img
+          className={style["card-type-image"]}
+          src={"./img/Cata.png"}
+          alt={""}
+        />
+      </div>
+      <div className={style["card-type heroes"]}>
+        <img
+          className={style["card-type-image"]}
+          src={"./img/Heroes.png"}
+          alt={""}
+        />
+      </div>
+      <div className={style["card-type whether"]}>
+        <img
+          className={style["card-type-image"]}
+          src={"./img/Whether.png"}
+          alt={""}
+        />
+      </div>
+      <div className={style["card-type special"]}>
+        <img
+          className={style["card-type-image"]}
+          src={"./img/Special.png"}
+          alt={""}
+        />
+      </div>
+    </div>
+  </div>);
 }
 
-function CardsDeck() {
-  return <h1></h1>;
+function CollectionCategories() {
+  return (<div>
+    <div className={style["cards-type"]}>ГЕРОИ</div>
+    <div className={style["list-card-types"]}>
+      <div className={style["card-type all"]}>
+        <img
+          className={style["card-type-image"]}
+          src={"./img/All.png"}
+          alt={""}
+        />
+      </div>
+      <div className={style["card-type meelee"]}>
+        <img
+          className={style["card-type-image"]}
+          src={"./img/Meelee.png"}
+          alt={""}
+        />
+      </div>
+      <div className={style["card-type archer"]}>
+        <img
+          className={style["card-type-image"]}
+          src={"./img/Archers.png"}
+          alt={""}
+        />
+      </div>
+      <div className={style["card-type cata"]}>
+        <img
+          className={style["card-type-image"]}
+          src={"./img/Cata.png"}
+          alt={""}
+        />
+      </div>
+      <div className={style["card-type heroes"]}>
+        <img
+          className={style["card-type-image"]}
+          src={"./img/Heroes.png"}
+          alt={""}
+        />
+      </div>
+      <div className={style["card-type whether"]}>
+        <img
+          className={style["card-type-image"]}
+          src={"./img/Whether.png"}
+          alt={""}
+        />
+      </div>
+      <div className={style["card-type special"]}>
+        <img
+          className={style["card-type-image"]}
+          src={"./img/Special.png"}
+          alt={""}
+        />
+      </div>
+    </div>
+  </div>);
 }
 
 function CardsStatistic() {
+  return (<div className={style["cards-information"]}>
+  <div className={style["all-cards-container"]}>
+    <div className={style["cards-information"]}>Карты в колоде</div>
+    <div className={style["all-cards"]}>
+      <div className={style["all-cards-icon"]}>
+        <img src={"./img/all-cards.png"} alt={""} />
+      </div>
+      <div className={style["all-cards-value"]}>0</div>
+    </div>
+  </div>
+  <div className={style["units-cards-container"]}>
+    <div className={style["cards-information"]}>Карты отрядов</div>
+    <div className={style["units-cards"]}>
+      <div className={style["units-cards-icon"]}>
+        <img src={"./img/units-cards.png"} alt={""} />
+      </div>
+      <div className={style["units-cards-value"]}>0/22</div>
+    </div>
+  </div>
+  <div className={style["special-cards-container"]}>
+    <div className={style["cards-information"]}>
+      Специальные карты
+    </div>
+    <div className={style["special-cards"]}>
+      <div className={style["special-cards-icon"]}>
+        <img src={"./img/special-cards.png"} alt={""} />
+      </div>
+      <div className={style["special-cards-value"]}>0/10</div>
+    </div>
+  </div>
+  <div className={style["power-cards-container"]}>
+    <div className={style["cards-information"]}>
+      Общая сила карт отрядов
+    </div>
+    <div className={style["power-cards"]}>
+      <div className={style["power-cards-icon"]}>
+        <img src={"./img/power-cards.png"} alt={""} />
+      </div>
+      <div className={style["power-cards-value"]}>0</div>
+    </div>
+  </div>
+  <div className={style["heroes-cards-container"]}>
+    <div className={style["cards-information"]}>Герои</div>
+    <div className={style["heroes-cards"]}>
+      <div className={style["heroes-cards-icon"]}>
+        <img src={"./img/heroes-cards.png"} alt={""} />
+      </div>
+      <div className={style["heroes-cards-value"]}>0</div>
+    </div>
+  </div>
+</div>);
+}
+
+function CardLeader() {
+  return (<div className={style["leader-card-container"]}>
+  <div className={style["leader-card"]}>
+    <img
+      className={style["leader-card-image"]}
+      src={
+        "./img/cards/Tw3_cardart_nilfgaard_leader_emhyr_silver.webp"
+      }
+      alt={""}
+    />
+    <div className={style["leader-card-info"]}>
+      <div className={style["leader-card-name"]}>
+        Эмгыр Ван Эмрейс
+      </div>
+      <div className={style["leader-card-description"]}>
+        Властелин юга
+      </div>
+    </div>
+  </div>
+</div>);
+}
+
+function Card() {
   return <h1></h1>;
 }
 
@@ -50,58 +232,7 @@ function App() {
       <div className={style["cards-container"]}>
         <div className={style["left-block"]}>
           <div className={style["deck"]}>Карты колод</div>
-          <div className={style["cards-type"]}>ГЕРОИ</div>
-          <div className={style["list-card-types"]}>
-            <div className={style["card-type all"]}>
-              <img
-                className={style["card-type-image"]}
-                src={"./img/All.png"}
-                alt={""}
-              />
-            </div>
-            <div className={style["card-type meelee"]}>
-              <img
-                className={style["card-type-image"]}
-                src={"./img/Meelee.png"}
-                alt={""}
-              />
-            </div>
-            <div className={style["card-type archer"]}>
-              <img
-                className={style["card-type-image"]}
-                src={"./img/Archers.png"}
-                alt={""}
-              />
-            </div>
-            <div className={style["card-type cata"]}>
-              <img
-                className={style["card-type-image"]}
-                src={"./img/Cata.png"}
-                alt={""}
-              />
-            </div>
-            <div className={style["card-type heroes"]}>
-              <img
-                className={style["card-type-image"]}
-                src={"./img/Heroes.png"}
-                alt={""}
-              />
-            </div>
-            <div className={style["card-type whether"]}>
-              <img
-                className={style["card-type-image"]}
-                src={"./img/Whether.png"}
-                alt={""}
-              />
-            </div>
-            <div className={style["card-type special"]}>
-              <img
-                className={style["card-type-image"]}
-                src={"./img/Special.png"}
-                alt={""}
-              />
-            </div>
-          </div>
+          <DeckCategories />
           <div className={style["deck-cards"]}>
             <div className={style["card"]}>
               <div className={style["card-info"]}>
@@ -280,131 +411,12 @@ function App() {
             Нильфгаард побеждает в случае ничьей
           </div>
           <div className={style["current-fraction-leader"]}>Лидер</div>
-          <div className={style["leader-card-container"]}>
-            <div className={style["leader-card"]}>
-              <img
-                className={style["leader-card-image"]}
-                src={
-                  "./img/cards/Tw3_cardart_nilfgaard_leader_emhyr_silver.webp"
-                }
-                alt={""}
-              />
-              <div className={style["leader-card-info"]}>
-                <div className={style["leader-card-name"]}>
-                  Эмгыр Ван Эмрейс
-                </div>
-                <div className={style["leader-card-description"]}>
-                  Властелин юга
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={style["cards-information"]}>
-            <div className={style["all-cards-container"]}>
-              <div className={style["cards-information"]}>Карты в колоде</div>
-              <div className={style["all-cards"]}>
-                <div className={style["all-cards-icon"]}>
-                  <img src={"./img/all-cards.png"} alt={""} />
-                </div>
-                <div className={style["all-cards-value"]}>0</div>
-              </div>
-            </div>
-            <div className={style["units-cards-container"]}>
-              <div className={style["cards-information"]}>Карты отрядов</div>
-              <div className={style["units-cards"]}>
-                <div className={style["units-cards-icon"]}>
-                  <img src={"./img/units-cards.png"} alt={""} />
-                </div>
-                <div className={style["units-cards-value"]}>0/22</div>
-              </div>
-            </div>
-            <div className={style["special-cards-container"]}>
-              <div className={style["cards-information"]}>
-                Специальные карты
-              </div>
-              <div className={style["special-cards"]}>
-                <div className={style["special-cards-icon"]}>
-                  <img src={"./img/special-cards.png"} alt={""} />
-                </div>
-                <div className={style["special-cards-value"]}>0/10</div>
-              </div>
-            </div>
-            <div className={style["power-cards-container"]}>
-              <div className={style["cards-information"]}>
-                Общая сила карт отрядов
-              </div>
-              <div className={style["power-cards"]}>
-                <div className={style["power-cards-icon"]}>
-                  <img src={"./img/power-cards.png"} alt={""} />
-                </div>
-                <div className={style["power-cards-value"]}>0</div>
-              </div>
-            </div>
-            <div className={style["heroes-cards-container"]}>
-              <div className={style["cards-information"]}>Герои</div>
-              <div className={style["heroes-cards"]}>
-                <div className={style["heroes-cards-icon"]}>
-                  <img src={"./img/heroes-cards.png"} alt={""} />
-                </div>
-                <div className={style["heroes-cards-value"]}>0</div>
-              </div>
-            </div>
-          </div>
+          <CardLeader />
+          <CardsStatistic />
         </div>
         <div className={style["right-block"]}>
           <div className={style["collection"]}>Карты коллекции</div>
-          <div className={style["cards-type"]}>ГЕРОИ</div>
-          <div className={style["list-card-types"]}>
-            <div className={style["card-type all"]}>
-              <img
-                className={style["card-type-image"]}
-                src={"./img/All.png"}
-                alt={""}
-              />
-            </div>
-            <div className={style["card-type meelee"]}>
-              <img
-                className={style["card-type-image"]}
-                src={"./img/Meelee.png"}
-                alt={""}
-              />
-            </div>
-            <div className={style["card-type archer"]}>
-              <img
-                className={style["card-type-image"]}
-                src={"./img/Archers.png"}
-                alt={""}
-              />
-            </div>
-            <div className={style["card-type cata"]}>
-              <img
-                className={style["card-type-image"]}
-                src={"./img/Cata.png"}
-                alt={""}
-              />
-            </div>
-            <div className={style["card-type heroes"]}>
-              <img
-                className={style["card-type-image"]}
-                src={"./img/Heroes.png"}
-                alt={""}
-              />
-            </div>
-            <div className={style["card-type whether"]}>
-              <img
-                className={style["card-type-image"]}
-                src={"./img/Whether.png"}
-                alt={""}
-              />
-            </div>
-            <div className={style["card-type special"]}>
-              <img
-                className={style["card-type-image"]}
-                src={"./img/Special.png"}
-                alt={""}
-              />
-            </div>
-          </div>
+          <CollectionCategories />
           <div className={style["collection-cards"]}></div>
         </div>
       </div>
